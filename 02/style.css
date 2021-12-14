@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.main{
+    width: 40%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.block{
+    flex-grow:1;
+    border:2px solid slateblue;
+    display: flex;
+    justify-content: center;
+}
+.Trapezoid, .Triangle{
+    width: 50%;
+    background: slateblue;
+    height: 30vh;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+
+}
+.Rectangle{
+    width: 50%;
+    background: slateblue;
+    height: 30vh;
+}
+.Trapezoid{
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%); 
+}
+.Triangle{
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+}
+.Square{
+    width: 50px;
+    height: 50px;
+    background: white;
+}
+.borderLeft{
+    width: 50%;
+    height: 10vh;
+    border-right: 2px solid white;
+    float: left;
+    margin-top: 55px;
+}
+.borderBottom{
+    width: 22%;
+    height: 10vh;
+    border-bottom: 2px solid white;
+    margin-top: 20px;
+    margin-left: 110px;
+}
+.circle{
+    width: 50px;
+    height: 50px;
+    background:white;
+    border-radius: 50%;
+}
