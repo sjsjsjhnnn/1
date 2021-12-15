@@ -18,11 +18,6 @@ h1{
     grid-row-gap: 3em;
     padding-bottom: 80px;
 }
-.block{
-    height: 50vh;
-    background: red;
-    border-radius: 10px;
-}
 .card {
     height: 50vh;
     border-radius: 10px;
@@ -37,21 +32,27 @@ h1{
     left: 0;
     top: 0;
     display: flex;
-    justify-content: center;
     align-items: center;
     transition: 1s;
     backface-visibility: hidden;
     border-radius: 10px;
 }
-.back_side1,.back_side3,.back_side4,.back_side6,.back_side7,.back_side9 {
-    background-color: #BDBDBD;
-    transform: rotateY(180deg);
+.back_side1,.back_side2,.back_side3,.back_side4,.back_side5,.back_side6,.back_side7,.back_side8,.back_side9{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    background-color: rgb(30,136,229);
     border-radius: 10px;
+    text-align: center;
+    color: white;
+}
+.back_side1,.back_side3,.back_side4,.back_side6,.back_side7,.back_side9{
+    transform: rotateY(180deg);
 }
 .back_side2,.back_side5,.back_side8{
-    background-color: #BDBDBD;
     transform: rotateX(180deg);
-    border-radius: 10px;
 }
 .front_side1 {
     background-image:url(img/1.jpg);
@@ -92,7 +93,7 @@ h1{
 .img-overlay{
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.6);
     border-radius: 10px;
     color: white;
     display: flex;
@@ -103,6 +104,45 @@ h1{
 }
 .img-overlay img{
     margin-top: 20%;
+}
+.block{
+    width: 70%;
+    height: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    margin-top: 7%;
+}
+.block1{
+    display: flex;
+    justify-content: center;
+}
+.blockss{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:space-between;
+    font-size: 18px;
+    margin-top: 10%;
+}
+.blockss2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+button{
+    width: 30%;
+    height: 5vh;
+    border-radius: 5px;
+    border: 1px solid white;
+    background: rgb(30,136,229);
+    color: white;
+}
+button:hover{
+    background: rgb(0,117,188);
 }
 .card:hover .front_side1,.card:hover .front_side3,.card:hover .front_side4, .card:hover .front_side6,.card:hover .front_side7,
 .card:hover .front_side9{
